@@ -1,0 +1,162 @@
+#title {
+    
+  height: 100%;
+  background-image: url("../img/mbg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*! height: 700px; */
+  min-height: 700px;
+  }
+#title::before{
+  content:"";
+  background-image: url("../img/mlogo.png");
+  background-size: cover;
+  width: 1508px;
+  height: 388px;
+  margin-top: 60px;
+  animation-name: fadeIn; /* 애니메이션 이름 */
+  animation-duration: 3s; /* 애니메이션 지속시간*/
+  /*! animation-iteration-count: 3; */ /*애니메이션 반복횟수*/
+  /*! animation-direction: alternate; */ /*애니메이션*/
+}
+@keyframes fadeIn{
+  0%{ /*처음 상태*/
+    opacity: 0;
+    transform:scale(0.7);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+  100%{ /*끝 상태*/
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+  #title form.search {
+  width: 700px;
+  height: 60px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 38px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 2px 0 10px #ccc;
+  border-radius: 30px;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-name: moveLeft;
+  transform: translateX(70px);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  }
+@keyframes moveLeft{
+  0%{
+    transform:translateX(70px);
+  }
+  100%{
+    transform:translateX(0px);
+  }
+}
+#title form.search::before{
+  content:"";
+  
+  background-image: url("../img/search.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+  #title form.search input {
+    
+  /*! width: 100%; */
+  /*! height: 100%; */
+  /*! border-radius: 100px; */
+  border: none;
+  /*! box-shadow: 0 5px 20px rgba(0,0,0,0.1); */
+  font-size: 16px;
+  }
+/*focus inpout태그안에 커서를 위치시키는 행위*/
+#title form.search input:focus{
+  
+}
+  #title form.search button {
+  height: 40px;
+  width: 150px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 100px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#title form.search button:hover{
+  cursor: pointer;
+}
+#title form.search button:active{
+  box-shadow:inset 2px 0 10px rgba(1 ,1,1,0.5);
+}
+
+  #title h2.hide {
+    
+  }
+  #title ul {
+    
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  /*! column-gap: 40px; */
+  }
+  #title ul li {
+    
+  }
+  #title ul li a {
+    
+  }
+#title ul.hash{
+  
+}
+#title ul.hash li a:hover{
+  color: yellowgreen;
+}
+#title span{
+  position: absolute;
+  bottom: 20px;
+}
+#title span::before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid #ddd;
+  border-top: transparent;
+  border-left: transparent;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  transform: rotate(45deg);
+  animation-name: scrollUp;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes scrollUp{
+  from{
+    transform:translateY(-10px)rotate(45deg);
+  }
+  to{
+    transform:translateY(0px)rotate(45deg);
+  }
+}
+#title span::after{
+  content:"scroll";
+}

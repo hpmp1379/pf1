@@ -1,0 +1,188 @@
+footer {
+  
+  background-color: #1b1b1b;
+  color: white;
+}
+footer .inner {
+  
+  height: 300px;
+  box-sizing: border-box;
+}
+footer .inner > div {
+  
+}
+footer .inner .left {
+  
+}
+footer .inner .left h1 {
+  
+}
+footer .inner .left h1 a {
+  color: #767676;
+  background-image: url("../img/flogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  display: block;
+  width: 113px;
+  height: 30px;
+}
+footer .inner .left address {
+  color: #a2a2a2;
+  transform: translateY(-20px);
+}
+footer .inner .left p.copyright {
+  color: #aaa;
+  font-family: 'Binggrae';
+}
+footer .inner .right {
+  
+}
+footer .inner .right ul.personal {
+  gap: 20px;
+  justify-content: flex-end;
+}
+footer .inner .right ul.personal li {
+  
+  font-size: 12px;
+}
+footer .inner .right ul.personal li a {
+  color: #aaa;
+}
+footer .inner .right ul.personal li a:hover{
+  border-bottom: 1px solid #aaa;
+}
+footer .inner .right .bottom {
+  gap: 50px
+}
+footer .inner .right .bottom ul.sns {
+  gap: 20px;
+  align-items: center;
+}
+footer .inner .right .bottom ul.sns li {
+  
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  position: relative;
+  background-color: #222;
+  box-shadow: 0px 10px 10px #111;
+}
+footer .inner .right .bottom ul.sns li a {
+  background-image: url("../img/logo-instagram.svg");
+  color: white;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .inner .right .bottom ul.sns li a:hover{
+  background-image: url("../img/logo-instagram2.svg");
+}
+footer .inner .right .bottom ul.sns li:nth-child(2) a {
+  background-image:url("../img/logo-youtube.svg");
+}
+footer .inner .right .bottom ul.sns li:nth-child(2) a:hover {
+  background-image: url("../img/logo-youtube2.svg");
+}
+footer .inner .right .bottom ul.sns li:nth-child(3) a {
+  background-image:url("../img/logo-twitter.svg");
+}
+footer .inner .right .bottom ul.sns li:nth-child(3) a:hover {
+  background-image:url("../img/logo-twitter2.svg");
+}
+footer a{
+  color: #eee;
+}
+footer .inner .right .bottom > a {
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #222;
+  box-shadow: 0 10px 10px black;
+  border-radius: 50px;
+  font-size: 12px;
+  /*! text-align: center; */
+}
+footer .inner .right .bottom > a::before{
+  content: "";
+  background-image: url(../img/fstore.png);
+  width: 64px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 13px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+footer .inner .right .bottom b{
+  color: #fc0;
+}
+
+aside#quick{
+  position: fixed;
+  right: 20px;
+  bottom: 150px;
+}
+aisde#quick span{
+  row-gap: 10px;
+}
+aside#quick a.shop{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 10px;
+  transition:all 0.3s;
+}
+aside#quick a.shop:hover{
+  font-weight: 700;
+  transform: scale(1.1);
+}
+aside#quick a.top{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  box-shadow: 0 0 10px white;
+  transition: all 0.3s;
+}
+aside#quick a.top::before{
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-left: transparent;
+  border-bottom: transparent;
+  transform: translateY(50%) rotate(-45deg);
+  transition: all 0.2s;
+}
+aside#quick a.top::after{
+  content:"";
+  width: 2px;
+  height: 18px;
+  display: block;
+  background-color: #fff;
+  transform: translateY(-30%);
+  transition: all 0.2s;
+}
+aside#quick a.top:hover::after{
+/*   transform: translateY(-50%); */
+}
+aside#quick a.top:hover::before{
+/*   transform: translateY(10%) rotate(-45deg); */
+  margin-top:-10px;
+}

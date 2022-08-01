@@ -1,0 +1,204 @@
+/* mediaquery x1200 */
+@media screen and (max-width:1200px){
+  
+/*   HEADER */
+  header .inner {
+    flex-wrap: wrap;
+  }
+  header .inner h1{
+    order: 1;
+  }
+  header .inner ul.gnb{
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  header .inner ul.enb{
+    order: 2;
+  }
+  
+/*   #TITLE */
+  #title::before {
+  width: 78.52vw;
+  height: 35.925vh;
+  height: 20.2vw;
+  margin-top: 3.125vw;
+  }
+  #title{
+  min-width: 36.46vw;
+  height: 100vw;
+  }
+  #title form.search{
+  width: 36.46vw;
+  min-width: 600px;
+  }
+  #title form.search::before {}
+  #title ul.has{
+    column-gap: 20px;
+  }
+  
+/*   # TASTE */
+  #taste div.inner ul.list{
+    flex-wrap: wrap;
+  }
+  main section#taste div.inner ul.list{
+    row-gap: 50px;
+  }
+  main section#taste div.inner ul.list li{
+    width: calc(100% / 3 - 50px /3);
+  }
+  
+/*    -SHOP- */
+  #shop .inner ul.list {
+    flex-wrap: wrap;
+  }
+  #shop .inner ul.list li{
+    width: calc(100% / 3 - 10px);
+  }
+  
+/* -커뮤니티- */
+  #community .inner div{
+  width: auto;
+  gap: initial;
+  box-shadow: none;
+  row-gap: 50px;
+  }
+  #community .inner div article ul li{
+    width: 100%;
+    /*! width: calc(100%); */
+  }
+  #community .inner div article ul li a{
+    height: auto;
+  }
+  #community .inner div article:not(.faq){
+  width: calc(100%);
+  }
+  
+/*   FOOTER */
+  footer .inner{
+    display: block;
+    height: auto;
+  }
+  footer .inner .left address{
+    margin-top: 20px;
+  }
+  footer .inner .right .bottom{
+    margin-top: 20px;
+  }
+  footer .inner .right .bottom > a{
+    text-align: center;
+  }
+  footer .inner .right ul.personal{
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+}
+/* mediaquery x768 */
+@media screen and (max-width:768px){
+  header .inner ul.gnb{
+  display: none;
+  }
+  header .inner ul.tnb{
+    display: none;
+  }
+/* 타이틀   */
+  #title::before {
+  width: 78.52vw;
+  height: 35.925vh;
+  height: 20.2vw;
+  margin-top: 3.125vw;
+  }
+  #title{
+  min-width: 36.46vw;
+  height: 100vw;
+  }
+  #title form.search{
+    
+  width: 36.46vw;
+  /*! height: 3.125vw; */
+  /*! padding: 1.563vw 0; */
+  min-width: 90%;
+  }
+  #title form.search::before {
+    
+  /*! width: 1vw; */
+  /*! height: 1vw; */
+  /*! left: 1vw; */
+  /*! top: 1vw; */
+  }
+  #title ul.has{
+    column-gap: 20px;
+  }
+  #taste div.inner ul.list{
+    flex-wrap: wrap;
+  }
+  main section#taste div.inner ul.list{
+    row-gap: 50px;
+  }
+  main section#taste div.inner ul.list li{
+  width: calc(100% / 2 - 50px / 2);
+  } 
+  #shop::before{
+    display:none;
+  }
+  #shop .list{
+    flex-wrap: wrap;
+  }
+  #shop .inner ul.list li{
+    width: calc(100% / 2 - 10px / 2);
+  }
+  #community .inner{
+    row-gap: 50px;
+  }
+  #community .inner > article{
+    width: 90%;
+  }
+  #community .inner div{
+  width: auto;
+  gap: initial;
+  box-shadow: none;
+  row-gap: 50px;
+  }
+  #community .inner div article ul li{
+    width: 100%;
+    /*! width: calc(100%); */
+  }
+  #community .inner div article ul li:nth-child(n+2):nth-child(-n+3){
+    line-height: 1.4;
+  }
+  #community .inner div article ul li a{
+    height: auto;
+  }
+  #community .inner div article:not(.faq){
+  width: calc(100%);
+  }
+  #community .inner div article p{
+    width: 50%;
+  }
+/*   Footer */
+  footer .inner{display: block;height: auto;}
+  footer .inner .left{}
+  footer .inner .left address{
+    margin-top: 20px;
+  }
+  footer .inner .right{
+    /*! align-items: flex-start; */
+  }
+  footer .inner .right .bottom{
+    margin-top: 20px;
+  }
+  footer .inner .right .bottom > a{
+    width: 20vw;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .inner .right ul.personal{
+    margin-top: 20px;
+  }
+  footer .inner .right .bottom > a::before{
+  margin: 0 auto;
+  }
+}
+

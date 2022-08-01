@@ -1,0 +1,237 @@
+body{
+  font-family: 'Noto Sans KR', 'sans-serif';
+}
+header{
+  /*! background: #ae6; */
+  /*! background: linear-gradient(to right, white -20%, #ae6 50%, green 150%); */
+}
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+/*하위선택자*/
+header::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  left: 0;
+  top: 27px;
+  z-index: 1;
+}
+header .inner{
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  margin-top: 28px;
+  /*! align-items: center; */
+}
+/*
+header .inner::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  left: 0;
+  top: 22px;
+}*/
+header .inner,
+header .inner>*{
+  /*! border: 2px solid red; */
+}
+header .inner h1 {
+  font-weight: 700;
+  }
+  header .inner h1 a {
+    background-image: url("../img/logo.png");
+    width: 142px;
+    height: 35px;
+    display: block;
+    font-size: 0;
+    /*! padding: 20px 0; */
+  }
+/*.menu{
+  border-top: 4px solid #111111 !important;
+}*/
+.gnb.menu{}
+  header .inner ul.gnb {
+  display: flex;
+  /*! gap: 15px; */
+  align-self: flex-start;
+  /*! position: relative; */
+  }
+header .inner ul.gnb::before{
+  content: "";
+  background-color: white;
+  width: 105%;
+  height: 0;
+  position: absolute;
+  left: -2.5%;
+  top: -28px;
+  z-index: -1;
+  transition: all 1s;
+}
+header .inner ul.gnb:hover::before{
+  height: 440px;
+}
+header .inner ul.gnb::after{
+  content:"";
+  width: 105%;
+  position: absolute;
+  left: -2.5%;
+  top: 80px;
+  z-index: -1;
+  border: 1px solid #ccc;
+  display: none;
+}
+header .inner ul.gnb:hover::after{
+  display: block;
+}
+  header .inner ul.gnb > li {
+    
+  }
+  header .inner ul.gnb > li > h2 a {
+  font-weight: 700;
+  padding: 20px 21px;
+  display: block;
+  /*! line-height: 3; */ /* 블럭에게만 적용되는 속성 */
+  font-size: 20px;
+  padding-top: 26.5px;
+  position: relative;
+  transition: all 0.5s;
+  }
+  header .inner ul.gnb > li > h2 a:hover{
+    color: red;
+  }
+header .inner ul.gnb > li > h2 a::after{
+  content: "";
+  display: block;
+  width: calc(100% - 42px);
+  border-bottom: 2px solid red;
+  transform: translateY(33px) scaleX(0);
+  position: absolute;
+  left: 21px;
+  transition: all 0.5s;
+  transform-origin: 50%;
+}
+header .inner ul.gnb > li:hover > h2 a::after{
+  content: "";
+  display: block;
+  width: calc(100% - 42px);
+  border-bottom: 2px solid red;
+  transform: translateY(33px) scaleX(100%);
+  position: absolute;
+  left: 21px;
+}
+  /* GNB > GnB SuB */
+  header .inner ul.gnb li ul.gnbsub {
+  display: none;
+  }
+header .inner ul.gnb:hover li ul.gnbsub{
+  display: block;
+}
+header .inner ul.gnb:hover ul.gnbsub{
+  opacity: 0;
+  animation-name: gnbfadein;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  margin-top: 27px;
+}
+@keyframes gnbfadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+  header .inner ul.gnb li ul.gnbsub li {
+  /*! outline: 1px solid; */
+  }
+  header .inner ul.gnb li ul.gnbsub li a {
+  line-height: 2;
+  padding-left: 21px;
+  padding-right: 5px;
+  }
+
+
+  /* ENB */
+  header .inner ul.enb {
+    display: flex;
+    gap: 15px;
+  }
+  header .inner ul.enb li {
+    
+  }
+  header .inner ul.enb li a{
+    font-size: 0;
+    width: 20px;
+    height: 14px;
+    border-top: 3px solid #555;
+    border-bottom: 3px solid #555;
+    display: flex;
+    align-items: center;
+  }
+header .inner ul.enb li a:hover{
+  /*! border-color: red; */
+  
+}
+header .inner ul.enb li select{
+  background-color: transparent;
+  border: none;
+}
+header .inner ul.enb li select:hover{
+  border: 1px solid black;
+  height: 20px;
+}
+  header .inner ul.enb li select option{
+    background-color: transparent;
+    border: none;
+  }
+header .inner ul.enb li a::before{
+  content:"";
+  border-top: 3px solid #555;
+  width: 100%;
+  display: block;
+  background-color: #555                      
+}
+header inner ul.enb li a:hover::before{
+  border-color: red;
+  
+}
+header .inner ul.tnb{
+  
+  position: absolute;
+  right: 0;
+  top: -25px;
+  font-size: 12px;
+  display: flex;
+  gap: 20px;
+}
+header .inner ul.tnb li{
+  
+}
+header .inner ul.tnb li:hover{
+}
+header .inner ul.tnb li a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: pink;
+  color: #e6a;
+}
+header .inner ul.tnb li a::after{
+  content:"";
+  background-image: url("../img/open.svg");
+  background-size: cover;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: -5px;
+  margin-left: 3px;
+}
+
