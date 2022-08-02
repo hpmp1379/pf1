@@ -154,10 +154,11 @@
     width: 90%;
   }
   #community .inner div{
-  width: auto;
+  width: calc(100% - 10px);
   gap: initial;
   box-shadow: none;
   row-gap: 50px;
+  padding: 50px;
   }
   #community .inner div article ul li{
     width: 100%;
@@ -172,11 +173,22 @@
   #community .inner div article:not(.faq){
   width: calc(100%);
   }
-  #community .inner div article p{
-    width: 50%;
+  #community .inner div article h3{
+    font-size: 24px;
+  }
+  #community .inner div article.telephone > a{
+    font-size: 24px;
+  }
+/*  ASIDE QUICK SELECT  */
+  aside#quick{
+    bottom: 250px; 
   }
 /*   Footer */
-  footer .inner{display: block;height: auto;}
+  footer .inner{
+    display: block;
+    height: auto;
+    padding: 30px;
+  }
   footer .inner .left{}
   footer .inner .left address{
     margin-top: 20px;
@@ -199,6 +211,12 @@
   }
   footer .inner .right .bottom > a::before{
   margin: 0 auto;
+  }
+  footer .inner .right .bottom ul.sns{
+    gap: 10px;
+  }
+  footer .inner .right .bottom{
+    gap: 10px;
   }
 }
 
