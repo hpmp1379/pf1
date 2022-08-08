@@ -1,4 +1,20 @@
-
+h1{
+  
+}
+h1 img{
+  
+}
+div.img{
+  
+  border: 3px solid;
+  width: 1295px;
+}
+div.img img{
+  
+  border: 1px solid;
+  /*! width: 100%; */
+  max-width: 100%;
+}
 /* 빙그레맛 */
 #taste {
     
@@ -191,7 +207,6 @@ margin-bottom:50px;
   height: 100%;
 }
 #community .inner {
-
   width: 1400px;
   margin: 0 auto;
   /*! border: 2px solid #ccc; */
@@ -201,6 +216,7 @@ margin-bottom:50px;
   border-radius: 50px;
   box-shadow: 0 0 11px #ccc;
   /*! margin-top: 100px; */
+  overflow: hidden;
   height: 410px;
 }
 #community .inner h2 {
@@ -296,13 +312,65 @@ margin-bottom:50px;
   
 }
 
-/* MediaQuery*/
-@media screen and (max-width:1920px){
+@media screen and (max-width:1440px){
   #community .inner{
-  width: 72.92vw;
-  height: 21.354vw;
+  width: 72.91666666666667vw;
+  height: 21.35416666666667vw;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.grow{
+  width: 1000px;
+  display: flex;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+ul.grow li{
+  border:1px solid #ccc;
+  flex-basis: 100px;
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+ul.grow li:nth-child(1){
+  flex-grow: 1;
+}
+ul.grow li:nth-child(2){
+   flex-grow: 1;
+}
+ul.grow li:nth-child(3){
+   flex-grow: 1;
+}
+ul.grow li:nth-child(4){
+   flex-grow: 1;
+}
+ul.grow li img{
+  width: 100%;
+}
+
+
 
 
 
