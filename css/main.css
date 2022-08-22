@@ -1,8 +1,13 @@
 main {
     /* SECTION TASTE */
   }
+
   main section#taste {
   }
+.tasteliup{
+  transform:translateY(0px) !important;
+  opacity: 1 !important;
+}
   main section#taste div.inner {
   }
   main section#taste div.inner h2.h2 {
@@ -17,10 +22,32 @@ main section#taste div.inner ul.list li {
   width: calc((100% / 6) - (50px / 6));
   box-sizing: border-box;
   transition: all 0.5s cubic-bezier(.23,1,.32,1);
+  opacity: 0.3;
+  transform: translateY(15px);
   }
 main section#taste div.inner ul.list li:hover{
-  transform:translateY(-20px);
+  transform:translateY(-15px) !important;
+  transition-delay: 0;
 }
+main section#taste div.inner ul.list li.delay:nth-last-child(1){
+  transition-delay: 0.2s;
+}
+main section#taste div.inner ul.list li.delay:nth-last-child(2){
+  transition-delay: 0.4s;
+}
+main section#taste div.inner ul.list li.delay:nth-last-child(3){
+  transition-delay: 0.6s;
+}
+main section#taste div.inner ul.list li.delay:nth-last-child(4){
+  transition-delay: 0.8s;
+}
+main section#taste div.inner ul.list li.delay:nth-last-child(5){
+  transition-delay: 1s;
+}
+main section#taste div.inner ul.list li.delay:nth-last-child(6){
+  transition-delay: 1.2s;
+}
+
 main section#taste div.inner ul.list li a::before{
   content: "View More";
   /*display: block;*/
@@ -116,6 +143,31 @@ main section#taste div.inner ul.list li:nth-of-type(6)::before{
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  transform: translateY(15px);
+  transition: all 1s ease-out;
+  opacity: 0.3;
+}
+main section#shop div.inner ul.list li.delay:nth-last-child(1){
+  transition-delay: 0.2s;
+}
+main section#shop div.inner ul.list li.delay:nth-last-child(2){
+  transition-delay: 0.4s;
+}
+main section#shop div.inner ul.list li.delay:nth-last-child(3){
+  transition-delay: 0.6s;
+}
+main section#shop div.inner ul.list li.delay:nth-last-child(4){
+  transition-delay: 0.8s;
+}
+main section#shop div.inner ul.list li.delay:nth-last-child(5){
+  transition-delay: 1s;
+}
+main section#shop div.inner ul.list li.delay:nth-last-child(6){
+  transition-delay: 1.2s;
+}
+#shop .inner ul.list li:hover{
+  transform: translateY(-15px) !important;
+  opacity: 1;
 }
 #shop .inner ul.list li:hover>*{
   display: block;
@@ -223,6 +275,7 @@ main section#taste div.inner ul.list li:nth-of-type(6)::before{
   background-position: right bottom;
   background-origin: content-box;
   align-items: flex-start;
+  transition: all 0.3s ease-in-out;
 }
 #community .inner > article h3 {
   
@@ -373,4 +426,7 @@ main section#taste div.inner ul.list li:nth-of-type(6)::before{
   background: #e72d28;
   color: white;
   border: 1px solid transparent;
+}
+.dropshadow{
+  box-shadow: 2px 2px 8px #ccc inset;
 }

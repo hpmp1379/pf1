@@ -160,3 +160,6 @@
 #title span::after{
   content:"scroll";
 }
+.focu{
+    box-shadow: 0 0 8px red !important;
+}
